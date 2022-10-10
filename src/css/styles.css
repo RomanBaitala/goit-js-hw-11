@@ -41,7 +41,8 @@ img {
     font-size: 18px;
 }
 
-[type="submit"]{
+[type="submit"],
+.load-more{
     font-size: 18px;
     border: none;
     border-radius: 4px;
@@ -49,7 +50,7 @@ img {
 }
 
 [type="submit"]:hover,
-[type="submit"]:focus{
+.load-more:hover{
     color: #FFFFFF;
     background-color: #2196F3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -75,4 +76,37 @@ img {
 .load-more{
     margin: 0 auto;
     margin-top: 50px;
+}
+
+.photo-card{
+    width: 300px;
+    margin: 0;
+    border-radius: 4px;
+    outline: 1px solid #EEEEEE;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.photo-card:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.card-img{
+    margin: 0 auto;
+}
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.info-item{
+    font-size: 13px;
+    margin-left: 6px;
+    text-align: center;
+}
+.load-more{
+    margin-bottom: 10px;
 }

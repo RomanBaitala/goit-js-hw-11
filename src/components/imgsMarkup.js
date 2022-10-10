@@ -5,24 +5,24 @@ export default function imgsMarkup(images){
         <div class="photo-card">
             <a href="${image.largeImageURL}" class="card-link">
                 <img class="card-image" src="${image.webformatURL}" alt="${image.tags}" loading="lazy"
-                width="250" height="180"/>
+                width="300" height="210"/>
             </a>
             <div class="info">
                 <p class="info-item">
                     <b>Likes</b>
-                    ${image.likes}
+                    <br>${image.likes}
                 </p>
                 <p class="info-item">
                     <b>Views</b>
-                    ${image.views}
+                    <br>${image.views}
                 </p>
                 <p class="info-item">
                     <b>Comments</b>
-                    ${image.comments}
+                    <br>${image.comments}
                 </p>    
                 <p class="info-item">
                     <b>Downloads</b>
-                    ${image.downloads}
+                    <br>${image.downloads}
                 </p>
             </div>
         </div>`
