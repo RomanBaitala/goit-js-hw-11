@@ -45,7 +45,7 @@ async function onSubmit(evt){
     totalHits -= images.hits.length
     const markup = imgsMarkup(images.hits)
     pushMarkup(markup)
-    toglleBtnLoad()
+    toglleBtnLoad(totalHits)
     lightboxOptions.refresh();
     
 };
@@ -72,7 +72,7 @@ function pushMarkup(markup){
 };
 
 function toglleBtnLoad(hitsValue){
-    if (hitsValue === 0 || hitsValue <= 0) {
+    if (hitsValue === 0 || hitsValue < 0) {
         loadBtnRef.style.display = 'none'
     } else{
         loadBtnRef.style.display = 'block'
